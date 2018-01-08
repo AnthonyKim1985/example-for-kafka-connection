@@ -1,0 +1,18 @@
+group 'org.bigdatacenter'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.2'
+    compile group: 'org.apache.kafka', name: 'kafka_2.12', version: '1.0.0'
+    compile group: 'org.apache.kafka', name: 'kafka-clients', version: '1.0.0'
+    provided group: 'org.projectlombok', name: 'lombok', version: '1.16.18'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
